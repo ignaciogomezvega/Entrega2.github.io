@@ -1,0 +1,140 @@
+html{
+    box-sizing: border-box;
+    font-size: 60.5%;
+}
+
+.img-fondo{
+    background-color: violet;
+}
+
+img{
+    width: 100%;
+}
+
+.velo-negro{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.contenedor{
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+}
+
+.logo-img{
+    max-width: 40rem;
+    margin: 3rem 0;
+    display: gird;
+    place-content: center;
+}
+nav{
+    margin: 3rem 0 8rem 0;
+    background-color: white;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 10rem;
+}
+
+a{
+    text-decoration: none;
+}
+nav a{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 800;
+    font-size: 3rem;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+}
+
+nav a:hover{
+    color: black;
+}
+.nuestros-productos{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(0, 0, 0);
+    font-size: 4rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.productos{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.producto{
+    background-color: white;
+    margin: 2rem;
+    padding: 2rem;
+}
+.producto-precio,
+.producto-nombre{
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+}
+.producto-precio{
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+.producto-nombre{
+    font-size: 3rem;
+    font-weight: 150;
+}
+.footer{
+    padding: 3.5rem;
+    background-color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-bottom: 2rem;
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+}
+
+
+.nosotros-texto{
+    color: white;
+    font-size: 3rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.bloques{
+    display: grid;
+    grid-template-columns: repeat(2);
+    gap: 20rem;
+}
+
+.bloques img{
+    width: 20rem;
+    height: 20rem;
+    margin-bottom: 20rem;
+}
+.bloque-titulo{
+    margin: 0 0 0;
+}
+.bloque{
+    text-align: center;
+    color: white;
+    font-size: 3rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 5rem;
+}
+
+.bloque-titulo{
+    color: black;
+    font-size: 4rem;
+    margin: 4rem;
+    text-transform: uppercase;
+}
+
+.enlace-footer:hover{
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
