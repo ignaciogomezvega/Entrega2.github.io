@@ -17,6 +17,7 @@
 
         <div class="velo-negro">
 
+   
             <header class="header">
                 <a href="/inicio.html">
 
@@ -27,7 +28,8 @@
 
             </header>
 
-            
+            </header>
+         
 
             <nav>
                 <a href="inicio.html">Inicio</a>
@@ -45,74 +47,42 @@
             </nav>
 
 
-           
+          
             <main class="contenedor">
-                <h1 class="nustros-productos">Productos mas vendidos</h1>
+                <h1 class="nustros-productos">Formulario para Contactarnos</h1>
 
-                
-                <div class="productos">
+                <Form class="formulario">
+                    <fieldset>
+                        <legend>Llene el formulario para Contactarnos</legend>
+                        <div class="campoForm">
 
-                 
-                   
-
-                    <a href="">
-                        <div class="producto">
-
-
-                            <div class="producto-blanco">
-                                <img src="./imagenes/Buzo Peludo Blanco.jpg" alt="poloche rojo">
-
+                            <div class="campo">
+                                <label for="nombre">Nombre</label>
+                                <input type="text" placeholder="Tu nombre">
                             </div>
-
-                            <div class="producto-informacion">
-                                <p class="producto-nombre">Buzo Peludo Blanco</p>
-
+                            <div class="campo">
+                                <label for="email">Email</label>
+                                <input type="email" placeholder="Tu Email">
                             </div>
-
-
-
-                        </div>
-                       
-                    </a> <a href="">
-                        <div class="producto">
-
-
-                            <div class="producto-blanco">
-                                <img src="./imagenes/Negro Cut.jpg" alt="poloche negro">
-
+                            <div class="campo">
+                                <label for="telefono">Teléfono</label>
+                                <input type="tel" placeholder="Tu Teléfono">
                             </div>
-
-                            <div class="producto-informacion">
-                                <p class="producto-nombre">Buzo Negro Wid Cut</p>
-
+                            <div class="campo">
+                                <label for="mensaje">Mensaje</label>
+                                <textarea placeholder="Tu Mensaje" name="mensaje" id="" cols="30" rows="10"></textarea>
                             </div>
 
 
 
                         </div>
-                    </a>
-                   
-                    <a href="">
-                        <div class="producto">
 
 
-                            <div class="producto-blanco">
-                                <img src="./imagenes/Blanco Cut.jpg" alt="poloche rojo">
-
-                            </div>
-
-                            <div class="producto-informacion">
-                                <p class="producto-nombre">Buzo Blanco Wid Cut</p>
-                            </div>
-
-
-
-                        </div>
-                    </a>
-
-
-                </div>
-
+                    </fieldset>
+                    <div class="derecha flex">
+                        <input type="submit" class="boton" placeholder="Enviar">
+                    </div>
+                </Form>
 
 
 
@@ -121,11 +91,12 @@
 
 
 
+
+
         </div>
 
 
     </div>
-
 
 
     <footer class="footer">
@@ -181,6 +152,7 @@
 
         <p>Copyright© 2022-Todos los derechos reservados TiendaONLINE</p>
     </footer>
+
 
 
 </body>

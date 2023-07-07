@@ -1,140 +1,311 @@
-html{
+/* Estilos base */
+html {
     box-sizing: border-box;
     font-size: 60.5%;
-}
-
-.img-fondo{
-    background-color: violet;
-}
-
-img{
-    width: 100%;
-}
-
-.velo-negro{
-    background-color: rgba(0, 0, 0, 0.5);
-}
-.contenedor{
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+  
+  /* Imagen de fondo */
+  .img-fondo {
+    background-color: rgba(200, 56, 200, 0.675);
+  }
+  
+  /* Imágenes */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Contenedor principal */
+  .contenedor {
     max-width: 120rem;
     margin: 0 auto;
-}
-
-.header{
+  }
+  
+  /* Header */
+  .header {
     display: flex;
     justify-content: center;
-}
-
-.logo-img{
+  }
+  
+  .logo-img {
     max-width: 40rem;
     margin: 3rem 0;
-    display: gird;
-    place-content: center;
-}
-nav{
+  }
+  
+  /* Menú de navegación */
+  nav {
     margin: 3rem 0 8rem 0;
-    background-color: white;
+    background-color: rgba(209, 187, 209, 0.566);
     padding: 2rem;
     display: flex;
     justify-content: center;
     gap: 10rem;
+    
 }
 
-a{
+a {
     text-decoration: none;
 }
-nav a{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+nav a {
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: 800;
     font-size: 3rem;
-    color: rgb(0, 0, 0);
+    color: white;
     text-transform: uppercase;
 }
 
-nav a:hover{
-    color: black;
+nav a:hover {
+    color: rgb(255, 255, 255);
 }
-.nuestros-productos{
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+.activa {
+    color: rgb(255, 255, 255);
+}
+.sub_me_desple {
+    display: none;
+}
+
+.desplegar:hover .sub_me_desple {
+    display: block;
+}
+
+  
+  .nustros-productos {
+    font-family: Arial, Helvetica, sans-serif;
     color: rgb(0, 0, 0);
     font-size: 4rem;
     text-align: center;
     text-transform: uppercase;
     font-weight: 800;
-}
-
-.productos{
+  }
+  
+  .productos {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
-}
-
-.producto{
-    background-color: white;
-    margin: 2rem;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+  
+  .producto {
+    border-radius: 0.7rem;
+    background-color: rgba(106, 98, 98, 0.768);
     padding: 2rem;
-}
-.producto-precio,
-.producto-nombre{
-    color: black;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  
+  .producto:hover {
+    background-color: rgb(145, 70, 164);
+  }
+  
+  .producto-blanco {
+    display: flex;
+    align-items: center;
+    border-radius: 0.7rem;
+    background-color: white;
+    padding: 1rem;
+  }
+  
+  .producto-precio,
+  .producto-nombre {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
     text-transform: uppercase;
     text-align: center;
-}
-.producto-precio{
+  }
+  
+  .producto-precio {
     font-size: 2.5rem;
     font-weight: 500;
-}
-.producto-nombre{
+  }
+  
+  .producto-nombre {
     font-size: 3rem;
-    font-weight: 150;
-}
-.footer{
-    padding: 3.5rem;
+    font-weight: 800;
+  }
+  
+  /* Formulario */
+  .formulario {
+    width: min(60rem, 100%);
+    margin: 0 auto;
+    padding: 1rem;
+  }
+  
+  .campo {
+    margin: 2rem;
+  }
+  
+  .campo label {
+    display: block;
+  }
+  
+  input,
+  textarea {
+    width: 100%;
+    border: none;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+  }
+  
+  input::placeholder,
+  textarea::placeholder {
+    font-size: 2rem;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  legend {
+    text-align: center;
+    color: white;
+    font-size: 3rem;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  label {
+    text-align: center;
+    font-size: 3rem;
+    color: white;
+    margin-bottom: 0.7rem;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .boton {
+    background-color: rgba(109, 94, 94, 0.768);
+    margin-top: 3rem;
+    color: white;
+    font-size: 2rem;
+    padding: 1rem 3rem;
+    border-radius: 0.5rem;
+    width: 40%;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  /* Footer */
+  .footer {
     background-color: black;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 3.5rem;
+    font-family: Arial, Helvetica, sans-serif;
     padding-bottom: 2rem;
     color: white;
     font-size: 2rem;
     text-align: center;
-}
-
-
-.nosotros-texto{
-    color: white;
-    font-size: 3rem;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
-}
-
-.bloques{
+  }
+  
+  /* Nosotros */
+  .nosotros {
     display: grid;
-    grid-template-columns: repeat(2);
-    gap: 20rem;
-}
-
-.bloques img{
-    width: 20rem;
-    height: 20rem;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10rem;
     margin-bottom: 20rem;
-}
-.bloque-titulo{
-    margin: 0 0 0;
-}
-.bloque{
-    text-align: center;
+  }
+  
+  .nosotros-texto {
     color: white;
     font-size: 3rem;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family:Arial, Helvetica, sans-serif;
+  }
+  
+  .nosotros-img {
+    background-color: white;
+    border-radius: 5%;
+  }
+  
+  /* Bloques */
+  .bloques {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20rem;
+  }
+  
+  .bloques img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 2rem;
+  }
+  
+  .bloque-titulo {
+    margin: 0;
+  }
+  
+  .bloque {
+    text-align: center;
+    color: rgb(12, 12, 12);
+    font-size: 3rem;
+    font-family: Arial, Helvetica, sans-serif;
     margin-bottom: 5rem;
-}
-
-.bloque-titulo{
-    color: black;
+  }
+  
+  .bloque-titulo {
+    color: rgb(0, 0, 0);
     font-size: 4rem;
-    margin: 4rem;
+    margin: 3rem;
     text-transform: uppercase;
-}
-
-.enlace-footer:hover{
+    font-weight: 800;
+  }
+  
+  /* Enlaces del footer */
+  .enlace-footer:hover {
     padding-left: 1rem;
     padding-right: 1rem;
-}
+  }
+  
+  /* Media Queries */
+  @media (max-width: 768px) {
+    
+    .header {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .logo-img {
+      margin: 2rem 0;
+    }
+  
+    nav {
+      flex-direction: column;
+      gap: 5rem;
+      margin-bottom: 5rem;
+    }
+  
+    .productos {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    .nosotros {
+      grid-template-columns: 1fr;
+    }
+  
+    .bloques {
+      grid-template-columns: 1fr;
+      gap: 5rem;
+    }
+  
+    .bloques img {
+      margin-bottom: 1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    
+    .productos {
+      grid-template-columns: 1fr;
+    }
+  
+    .nosotros {
+      grid-template-columns: 1fr;
+      gap: 5rem;
+    }
+  
+    .bloques {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+  }
+  
